@@ -1,0 +1,162 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+  font-family: "RUAG";
+  src: url("./assets/fonts/WebXL/RUAGSimplon-Regular-WebXL.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "RUAG-BOLD";
+  src: url("./assets/fonts/WebXL/RUAGSimplon-Medium-WebXL.woff2")
+    format("woff2");
+}
+
+html {
+  font-family: "RUAG", sans-serif;
+
+  b {
+    font-family: "RUAG-BOLD", sans-serif;
+  }
+}
+
+b {
+  font-weight: 500;
+}
+
+p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ion-color-step-600, #60646b);
+
+  b {
+    color: var(--ion-text-color, #000000);
+  }
+}
+
+.slide-title {
+  margin-top: 2.8rem;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+ion-slide {
+  h1 {
+    color: #fff;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  p {
+    color: lightgrey;
+  }
+}
+
+.center-header {
+  position: relative;
+
+  width: 100%;
+  height: 30%;
+}
+
+.center-header .center-image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+
+  transition: opacity 500ms ease-in-out;
+}
+
+.center-header {
+  position: relative;
+
+  width: 100%;
+  height: 30%;
+}
+
+.center-header .center-image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+
+  transition: opacity 500ms ease-in-out;
+}
+
+.center-header .berufsbildung {
+  background-image: url("./assets/images/branding/unterschied/steffi.jpg");
+}
+
+.center-header .company {
+  background-image: url("./assets/images/branding/unterschied/enzo.jpg");
+}
+
+.center-header .informatik {
+  background-image: url("./assets/images/jobs/Informatikerin.jpg");
+}
+
+.center-header .automatik {
+  background-image: url("./assets/images/jobs/Automatikerin.jpg");
+}
+
+.center-header .logistik {
+  background-image: url("./assets/images/jobs/Logistikerin.jpg");
+}
+
+.center-header .polymechanik {
+  background-image: url("./assets/images/jobs/Polymechanikerin.jpg");
+}

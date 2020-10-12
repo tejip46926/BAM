@@ -1,0 +1,71 @@
+ion-content {
+  --background: url(./../../../assets/images/branding/backgrounds/schweizerisch_darken.jpg)
+    no-repeat cover fixed center;
+
+  background: url(./../../../assets/images/branding/backgrounds/schweizerisch_darken.jpg)
+    no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.vertical-center {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+
+  width: 90vw;
+}
+
+ion-slide {
+  h1 {
+    color: #fff;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  p {
+    color: lightgrey;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.swiper-slide {
+  display: block;
+}
+
+.slide-title {
+  margin-top: 2.8rem;
+}
+
+.slide-image {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 36px 0;
+  pointer-events: none;
+}
+
+b {
+  font-weight: 500;
+}

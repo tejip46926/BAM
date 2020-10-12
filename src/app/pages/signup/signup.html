@@ -1,0 +1,381 @@
+<ion-content>
+  <ion-slides #slides pager="true" style="height:100%" class=“swiper-no-swiping”>
+    <ion-slide *ngIf="!newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card style="text-align: center;">
+            <ion-card-header>
+              <ion-card-title>Danke für die Anmeldung!</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Du hast Dich bereits für den Schnuppertag angemeldet und wir haben die Informationen erhalten.
+                Wir werden in den nächsten Wochen den Kontakt mit Dir suchen.<br><br>
+                Beste Grüsse,<br>
+                <div style="text-align: center;"> 
+
+                  <br>
+                  <img src="./../../../assets/images/branding/logo/logo.png" width="150px">
+                  <br><br>
+                </div>
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Bereit für das Quizz</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Du kannst zum lösen des Quizz die Unterlagen verwenden, welche du erhalten hast. Sobald zu das Quizz abgeschlossen hast, kannst Du dich bei einem Betreuer melden um einen praktischen Einblick in unsere Arbeit zu erhalten.
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-button (click)="startNow()" color="primary" shape="round">Start</ion-button>
+
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 1 / 20</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <img>
+
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Wer bist denn Du?</ion-card-title>
+              <ion-card-subtitle mode="md">Gib bitte deinen Vornamen, Nachnamen ein und wähle dein Geschlecht aus.
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-input [(ngModel)]="visitorData.firstName" type="text" (ionChange)='inputChanged($event.target.value)'
+                placeholder="Vorname"></ion-input>
+              <ion-input [(ngModel)]="visitorData.lastName" type="text" (ionChange)='inputChanged($event.target.value)'
+                placeholder="Nachname"></ion-input>
+              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.gender" value="Frau"
+                okText="OK" cancelText="Abbruch">
+                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
+                <ion-select-option value="Frau">Weiblich</ion-select-option>
+                <ion-select-option value="Herr">Männlich</ion-select-option>
+                <ion-select-option value="Anderes">Divers</ion-select-option>
+              </ion-select>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Hi {{ visitorData.firstName }}! Woher kommst Du?</ion-card-title>
+              <ion-card-subtitle mode="md">Gib bitte deine Adresse mit PLZ und Ort ein.</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-input [(ngModel)]="visitorData.street" type="text" (ionChange)='inputChanged($event.target.value)'
+                placeholder="Strasse und Hausnummer"></ion-input>
+              <ion-input [(ngModel)]="visitorData.zip" type="tel" (ionChange)='inputChanged($event.target.value)'
+                placeholder="Postleitzahl"></ion-input>
+              <ion-input [(ngModel)]="visitorData.city" type="text" (ionChange)='inputChanged($event.target.value)'
+                placeholder="Wohnort"></ion-input>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Und wie könnten wir Dich digtial erreichen?</ion-card-title>
+              <ion-card-subtitle mode="md">Gib bitte deine E-Mail-Adresse sowie deine Telefonnummer ein.
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-input [(ngModel)]="visitorData.email" type="email" (ionChange)='inputChanged($event.target.value)'
+                placeholder="E-Mail-Adresse"></ion-input>
+              <ion-input [(ngModel)]="visitorData.phone" type="tel" (ionChange)='inputChanged($event.target.value)'
+                placeholder="Telefonnummer (Format: 0771234567)"></ion-input>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Und wann hast Du Geburtstag {{ visitorData.firstName }}?</ion-card-title>
+              <ion-card-subtitle mode="md">Gib bitte dein korrektes Geburtsdatum an.</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-label position="floating">Dein Geburtsdatum</ion-label>
+              <ion-datetime [(ngModel)]="visitorData.birthday" (ionChange)='inputChanged($event.target.value)'
+                displayFormat="DD.MM.YYYY" max="2010-01-01" min="1960-01-01" value="2001-09-01T10:00:00.000"
+                doneText="Fertig" cancelText="Abbruch">
+              </ion-datetime>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Und in welchem Schuljahr bist Du denn?</ion-card-title>
+              <ion-card-subtitle mode="md">Gib bitte dein aktuelles Schuljahr an.</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.class" value="null"
+                okText="OK" cancelText="Abbruch">
+                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
+                <ion-select-option value="7">7. Klasse</ion-select-option>
+                <ion-select-option value="8">8. Klasse</ion-select-option>
+                <ion-select-option value="9">9. Klasse</ion-select-option>
+                <ion-select-option value="10+">10. Klasse (oder später)</ion-select-option>
+              </ion-select>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Und wann würdest Du deine Lehre starten?</ion-card-title>
+              <ion-card-subtitle mode="md">Gib das Jahr deines Lehrstarts ein.</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.apprenticeStart"
+                value="null" okText="OK" cancelText="Abbruch">
+                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
+                <ion-select-option value="2022">2022</ion-select-option>
+                <ion-select-option value="2023">2023</ion-select-option>
+                <ion-select-option value="2024">2024</ion-select-option>
+                <ion-select-option value="2025">2025</ion-select-option>
+                <ion-select-option value="2025">2026</ion-select-option>
+
+              </ion-select>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>An welchem Datum würdest Du gerne schnuppern kommen?</ion-card-title>
+              <ion-card-subtitle mode="md">Wähle bitte ein passendes Datum aus.</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.selectedCourse"
+                value="null" okText="OK" cancelText="Abbruch">
+                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
+                <ion-select-option value="2020-11-13">Freitag, 13.11.2020</ion-select-option>
+                <ion-select-option value="2020-11-14">Framstag, 14.11.2020</ion-select-option>
+                <ion-select-option value="2020-11-15">Fromstag, 15.11.2020</ion-select-option>
+              </ion-select>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title *ngIf="visitorData.gender == 'Frau'">Wie hast Du erfahren, dass RUAG auch
+                Informatikerinnen ausbildet?</ion-card-title>
+              <ion-card-title *ngIf="visitorData.gender !== 'Frau'">Wie hast Du erfahren, dass RUAG auch Informatiker
+                ausbildet?</ion-card-title>
+              <ion-card-subtitle mode="md">Bitte wähle eine Option aus.</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content>
+              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.heardAboutThis"
+                value="null" okText="OK" cancelText="Abbruch">
+                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
+                <ion-select-option value="inserat">Inserat</ion-select-option>
+                <ion-select-option value="einladung">Persönliche Einladung</ion-select-option>
+                <ion-select-option value="internetwerbung">Internetwerbung</ion-select-option>
+                <ion-select-option value="empfehlung">Empfehlung</ion-select-option>
+                <ion-select-option value="talentsday">Talentsday</ion-select-option>
+                <ion-select-option value="website">RUAG Website</ion-select-option>
+              </ion-select>
+            </ion-card-content>
+
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title *ngIf="visitorData.gender == 'Frau'">Wieso möchtest Du Informatikerin werden?
+              </ion-card-title>
+              <ion-card-title *ngIf="visitorData.gender !== 'Frau'">Wieso möchtest Du Informatiker werden?
+              </ion-card-title>
+              <ion-card-subtitle mode="md">Schildere dies bitte in einem oder zwei kurzen Sätzen. Mindestens 15 Zeichen sind vorausgesetzt!</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-textarea (ionChange)="inputChanged($event.target.value)" [(ngModel)]="visitorData.whyThisJob"
+                placeholder="Tippe um einzugeben..."></ion-textarea>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Hattest Du bereits Kontakt mit Informatik?</ion-card-title>
+              <ion-card-subtitle mode="md">Schildere bitte in einem oder zwei kurzen Sätzen was du bereits kennst,
+                gemacht hast
+                oder gesehen hast. Mindestens 15 Zeichen sind vorausgesetzt!</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content>
+              <ion-textarea (ionChange)="inputChanged($event.target.value)" [(ngModel)]="visitorData.mySkills"
+                placeholder="Tippe um einzugeben..."></ion-textarea>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Ein letzter Schritt!
+              </ion-card-title>
+              <ion-card-subtitle mode="md">Bitte bestätige, dass Du ein Mensch bist, indem Du eine kleine Rechenaufgabe
+                löst.</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              Was ergibt {{ number1 }} + {{ number2 }}?
+              <ion-input [(ngModel)]="humanVerification" type="tel" (ionChange)='inputChanged($event.target.value)'
+                placeholder="Deine Lösung"></ion-input>
+
+              <ion-list lines="none" class="centerControlls">
+
+                <ion-item class="custom-checkbox">
+                  <ion-label class="ion-text-wrap" style="font-size: 14px;">Ich bin damit einverstanden, dass RUAG meine
+                    Informationen speichert und diese für Zwecke der Berufsbildung weiterverwendet.
+                  </ion-label>
+                  <ion-checkbox [(ngModel)]="legalAccepted" (ionChange)='inputChanged($event.target.value)' mode="ios"
+                    color="primary" checked slot="start">
+                  </ion-checkbox>
+                </ion-item>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Danke, {{ visitorData.firstName }}!</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <div *ngIf="loading">
+                Deine Informationen werden gerade noch auf unsere PC's kopiert. Bitte schliesse diese Ansicht erst,
+                wenn
+                Du eine Erfolgsmeldung siehst.<br><br>
+                <ion-spinner color="primary" name="lines-small"></ion-spinner>
+              </div>
+              <div *ngIf="success">
+                Super! Deine Informationen wurden abgelegt.
+                Du hast nun eine Bestätigungsmail erhalten. Antworte bitte auf diese und sende deinen Lebenslauf wie
+                auch die letzten Schulzeugnisse und dem Motivationsschreiben als Anhang mit.<br><br>
+                <img src="./../../../assets/images/checkmark.gif" width="90px">
+              </div>
+
+              <div *ngIf="error">
+                Hoppla! Beim abspeichern deiner Informationen ist ein Fehler aufgetreten. Wende Dich bitte an die
+                Informatiker weitere Hilfe!<br><br>
+                <img src="./../../../assets/images/error.gif" width="120px">
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" *ngIf="viewIndex !== 0 && showPrevBtn">
+    <ion-fab-button (click)="backward()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="showSendBtn">
+    <ion-fab-button (click)="processData()">
+      <ion-icon name="send-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="showProceedBtn">
+    <ion-fab-button (click)="forward()">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="showProceedBtn">
+    <ion-fab-button (click)="forward()">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

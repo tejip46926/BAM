@@ -1,0 +1,356 @@
+{
+  "regionalContacts": [
+    {
+      "identifier": "west",
+      "title": "Deborah Merz",
+      "contactPerson": "058 467 05 80",
+      "email": "deborah.merz@ruag.ch"
+    },
+    {
+      "identifier": "sued",
+      "title": "Deborah Merz",
+      "contactPerson": "058 467 05 80",
+      "email": "deborah.merz@ruag.ch"
+    },
+    {
+      "identifier": "mitte",
+      "title": "Deborah Merz",
+      "contactPerson": "058 467 05 80",
+      "email": "deborah.merz@ruag.ch"
+    }
+  ],
+
+  "appDetails": {
+    "versionNumber": "0.0.5",
+    "maintainer": "Dominik Ponniah",
+    "year": "2020"
+  },
+
+  "jobs": [
+    {
+      "title": "Ausbildungsberufe in Interlaken",
+      "location": "Interlaken",
+      "center": "Luft",
+      "listing": [
+        {
+          "title": "Automatiker/in",
+          "description": "Gestalte den industriellen Fortschritt mit. Du denkst und handelst nicht nur wirtschaftlich, sondern auch ökologisch? Mit uns lernst Du, wie Du den industriellen Fortschritt mitgestalten kannst. Als Automatiker/in EFZ (CH) sorgst Du dafür, dass Maschinen und Anlagen sicherer, effizienter, flexibler und wirtschaftlicher werden.",
+          "imageURL": "/assets/images/jobs/Automatikerin.jpg",
+          "providedBy": "Berufsbildung West",
+          "lastChange": "2020",
+          "linking": "automatik",
+          "profile": [
+            {
+              "title": "Abschluss",
+              "subtitle": "Der obligatorischen Schulzeit"
+            },
+            {
+              "title": "Gute Leistungen",
+              "subtitle": "In Mathe und Physik"
+            },
+            {
+              "title": "Keine Farbsehstörungen",
+              "subtitle": ""
+            },
+            {
+              "title": "Interesse",
+              "subtitle": "An technischen Zusammenhängen"
+            },
+            {
+              "title": "Geschick",
+              "subtitle": "Im Handwerk"
+            },
+            {
+              "title": "Denk- & Vorstellungsvermögen",
+              "subtitle": "abstrakt, räumlich und logisch"
+            },
+            {
+              "title": "Exakte Arbeitsweise",
+              "subtitle": "Im Team und bei Einzelarbeiten"
+            }
+          ],
+          "tasks": [
+            {
+              "title": "Planen, programmieren und bauen",
+              "subtitle": "von elektrischen und pneumatischen Anlagen"
+            },
+            {
+              "title": "Montieren und verdrahten",
+              "subtitle": "von Schaltschränken"
+            },
+            {
+              "title": "Inbetriebnahme",
+              "subtitle": "von automatisierten Anlagen"
+            },
+            {
+              "title": "Ausführen",
+              "subtitle": "von Instandhaltungsarbeiten"
+            },
+            {
+              "title": "Erstellen",
+              "subtitle": "von technischen Dokumentationen"
+            }
+          ],
+          "whatYouGet": [
+            {
+              "title": "Modernes Umfeld"
+            },
+            {
+              "title": "Fundierte Ausbildung"
+            },
+            {
+              "title": "Weiterbeschäftigung möglich"
+            },
+            {
+              "title": "Lernenden-Events"
+            }
+          ]
+        },
+        {
+          "title": "Elektroniker/in",
+          "description": "Treibe Technologie elementar an. Du bist technisch versiert und fasziniert von der Welt der Elektronik? Mit uns lernst Du, Technologie elementar anzutreiben. Als Elektroniker/in arbeitest Du an der Planung, Entwicklung und Produktion von elektronischer Hard- und Software mit, die wir für technologische Anwendungen, Produkte und Services einsetzen.",
+          "imageURL": "/assets/images/jobs/Elektronikerin.jpg",
+          "providedBy": "Berufsbildung West",
+          "lastChange": "2020",
+          "linking": "elektronik",
+          "profile": [
+            {
+              "title": "Abschluss",
+              "subtitle": "Der obligatorischen Schulzeit"
+            },
+            {
+              "title": "Gute Leistungen",
+              "subtitle": "In Mathe und Physik"
+            },
+            {
+              "title": "Keine Farbsehstörungen",
+              "subtitle": ""
+            },
+            {
+              "title": "Interesse",
+              "subtitle": "An technischen Zusammenhängen"
+            },
+            {
+              "title": "Geschick",
+              "subtitle": "Im Handwerk"
+            },
+            {
+              "title": "Denk- & Vorstellungsvermögen",
+              "subtitle": "abstrakt, räumlich und logisch"
+            },
+            {
+              "title": "Exakte Arbeitsweise",
+              "subtitle": "Im Team und bei Einzelarbeiten"
+            }
+          ],
+          "tasks": [
+            {
+              "title": "Entwickeln und realisieren",
+              "subtitle": "von elektronischen Schaltungen oder Programmen"
+            },
+            {
+              "title": "Mitwirken",
+              "subtitle": "bei Aufträgen und Projekten"
+            },
+            {
+              "title": "Fertigen",
+              "subtitle": "von elektronischen Geräten oder Anlagen"
+            },
+            {
+              "title": "Erstellen",
+              "subtitle": "von technischen Dokumentationen"
+            }
+          ],
+          "whatYouGet": [
+            {
+              "title": "Modernes Umfeld"
+            },
+            {
+              "title": "Fundierte Ausbildung"
+            },
+            {
+              "title": "Weiterbeschäftigung möglich"
+            },
+            {
+              "title": "Lernenden-Events"
+            }
+          ]
+        },
+        {
+          "title": "Logistiker/in",
+          "description": "Agiere im Zentrum von RUAG. Du besitzt ein ausgeprägtes praktisch-technisches Verständnis? Mit uns lernst Du, im Zentrum des Unternehmens zu agieren. Als Logistiker/in EFZ (CH) bist Du für das fachgerechte Transportieren, Lagern und Verteilen von Rohstoffen, Materialien und Waren zuständig.",
+          "imageURL": "/assets/images/jobs/Logistikerin.jpg",
+          "providedBy": "Berufsbildung West",
+          "linking": "logistik",
+          "profile": [
+            {
+              "title": "Praktisches Verständnis",
+              "subtitle": "wie auch technisches"
+            },
+            {
+              "title": "Organisationstalent",
+              "subtitle": ""
+            },
+            {
+              "title": "Zuverlässigkeit",
+              "subtitle": "und Verantwortungsbewusstsein"
+            },
+            {
+              "title": "Selbstständigkeit",
+              "subtitle": ""
+            }
+          ],
+          "tasks": [
+            {
+              "title": "Empfangen, kontrollieren",
+              "subtitle": "und einlagern von Waren am richtigen Ort"
+            },
+            {
+              "title": "Verbuchen",
+              "subtitle": "von Lieferungen und Warensendungen"
+            },
+            {
+              "title": "Vorbereiten von Waren",
+              "subtitle": "für den Versand"
+            }
+          ],
+          "whatYouGet": [
+            {
+              "title": "Modernes Umfeld"
+            },
+            {
+              "title": "Fundierte Ausbildung"
+            },
+            {
+              "title": "Weiterbeschäftigung möglich"
+            },
+            {
+              "title": "Lernenden-Events"
+            }
+          ]
+        },
+        {
+          "title": "Polymechaniker/in",
+          "description": "Beeinflusse alle Facetten der Mechanik. Du bist aufgeschlossen gegenüber Neuerungen? Mit uns lernst Du, alle Facetten der Mechanik zu beeinflussen – vom Präzisionsbauteil bis zur Fertigungsstrasse. Du konstruierst? Werkstücke mit verschiedensten Verfahren, baust Geräte, Apparate und Maschinen zusammen und bist zuständig für ihre Bereitstellung, Inbetriebnahme und Wartung.",
+          "imageURL": "/assets/images/jobs/Polymechanikerin.jpg",
+          "providedBy": "Berufsbildung West",
+          "lastChange": "2020",
+          "linking": "polymechanik",
+          "profile": [
+            {
+              "title": "Abschluss",
+              "subtitle": "Der obligatorischen Schulzeit"
+            },
+            {
+              "title": "Gute Leistungen",
+              "subtitle": "In Mathe und Physik"
+            },
+            {
+              "title": "Interesse",
+              "subtitle": "An technischen Zusammenhängen"
+            },
+            {
+              "title": "Geschick",
+              "subtitle": "Im Handwerk"
+            },
+            {
+              "title": "Denk- & Vorstellungsvermögen",
+              "subtitle": "abstrakt, logisch und räumlich"
+            },
+            {
+              "title": "Exakte Arbeitsweise",
+              "subtitle": "Im Team und bei Einzelarbeiten"
+            }
+          ],
+          "tasks": [
+            {
+              "title": "Bearbeiten von Werkstoffen",
+              "subtitle": "Wie etwa Metalle und Kunststoffe"
+            },
+            {
+              "title": "Warten, reparieren",
+              "subtitle": "Von Fahrzeugen und Flugzeugen"
+            },
+            {
+              "title": "Weiterarbeit an Projekten",
+              "subtitle": "Fertigen von Werkstücken"
+            },
+
+            {
+              "title": "Zusammenbau",
+              "subtitle": "Von Geräten, Apparaten und mehr"
+            }
+          ],
+          "whatYouGet": [
+            {
+              "title": "Modernes Umfeld"
+            },
+            {
+              "title": "Fundierte Ausbildung"
+            },
+            {
+              "title": "Weiterbeschäftigung möglich"
+            },
+            {
+              "title": "Lernenden-Events"
+            }
+          ]
+        },
+        {
+          "title": "Informatiker/in",
+          "description": "Treibe digitalen Fortschritt an. Du wünschst Dir ein facettenreiches und fortschrittliches Umfeld? Mit uns lernst Du digitale Technologien aus allen Blickwinkeln kennen. Als Informatiker/in EFZ (CH) beschäftigst Du Dich mit der Hard- und Software in unserer hochmodernen digitalen Infrastruktur – von der Arbeitsplatzeinrichtung bis zur Weiterentwicklung unserer digitalen Spitzenprodukte.",
+          "imageURL": "/assets/images/jobs/Informatikerin.jpg",
+          "providedBy": "Berufsbildung West",
+          "lastChange": "2020",
+          "linking": "informatik",
+          "profile": [
+            {
+              "title": "Abschluss",
+              "subtitle": "Der obligatorischen Schulzeit"
+            },
+            {
+              "title": "Gute Leistungen",
+              "subtitle": "In Mathe, Deutsch und Englisch"
+            },
+            {
+              "title": "Interesse",
+              "subtitle": "An Computern und Technologie"
+            },
+            {
+              "title": "Denkvernögen",
+              "subtitle": "Mit rascher Auffassungsgabe"
+            }
+          ],
+          "tasks": [
+            {
+              "title": "Programmieren",
+              "subtitle": "Mit C++ und Java"
+            },
+            {
+              "title": "Umsetzen und Testen",
+              "subtitle": "Von Software"
+            },
+            {
+              "title": "Weiterarbeit an Projekten",
+              "subtitle": "Als Teil des Teams"
+            }
+          ],
+          "whatYouGet": [
+            {
+              "title": "Modernes Umfeld"
+            },
+            {
+              "title": "Fundierte Ausbildung"
+            },
+            {
+              "title": "Weiterbeschäftigung möglich"
+            },
+            {
+              "title": "Lernenden-Events"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

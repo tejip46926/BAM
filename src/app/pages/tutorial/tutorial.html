@@ -1,0 +1,49 @@
+<ion-content fullscreen="true">
+
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false" style="height:100%">
+    <ion-slide>
+      <h1 style="font-size: 45px;">🙋‍♀️</h1>
+
+      <h2 class="slide-title">
+        Hallo!
+      </h2>
+      <p>
+        Willkommen am BAM Stand der RUAG!<br>
+        Diese App wird Dich beim Besuch an unserem Stand begleiten.<br><br>
+        Swipe nach links um fortzufahren...
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <h1 style="font-size: 45px;">📱</h1>
+
+      <h2 class="slide-title">
+        Alles auf einen Blick!
+      </h2>
+      <p>
+        Hier findest du Informationen zu uns, dem Beruf des Informatikers und unseren Partnern<br>
+        Dazu gibt es ein kleines Quizz welches du mit Hilfe der Unterlagen lösen kannst<br>
+        Nachdem du das Quizz abgeschlossen hast, erwartet dich eine spannende, praktische Aufgabe!<br><br>
+        Swipe nach links um fortzufahren...
+      </p>
+    </ion-slide>
+
+
+    <ion-slide>
+
+      <h1 style="font-size: 45px;">🤙</h1>
+
+      <h2 class="slide-title">Bereit?</h2>
+      <p>Wir freuen uns, dass Du unseren Stand besuchst!</p>
+      <ion-button style="color: white; border: 2px solid white; border-radius: 6px;" fill="clear" (click)="startApp()">
+        LOS GEHT'S
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="footer">
+    <img src="./../../../assets/images/branding/logo/logo.png" width="150px">
+    <br><br>
+  </div>
+</ion-content>

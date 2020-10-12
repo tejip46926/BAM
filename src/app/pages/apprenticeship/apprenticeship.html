@@ -1,0 +1,79 @@
+<ion-content>
+  <ion-slides #slides pager="true" style="height:100%" class=“swiper-no-swiping”>
+    <ion-slide>
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card style="text-align: center;">
+            <ion-card-header>
+              <ion-card-title>Entdecke unsere Berufsvielfalt!</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Bei RUAG gibt es nicht nur den einen Beruf -
+                es gibt mehr als ein Dutzend verschiedene Berufe,
+                die Du in der ganzen Schweiz bei RUAG lernen kannst.<br><br>
+
+                <!--<br><br>
+                <b>
+
+                  Wähle aus, von welchem Standort Du die Ausbildungsberufe sehen möchtest.
+                </b>
+                <ion-select mode="ios" placeholder="Standort auswählen..." (ionChange)='jobLocationChanged()'
+                  [(ngModel)]="location" okText="OK" cancelText="Abbruch">
+                  <ion-select-option value="full">Ganze Schweiz</ion-select-option>
+                  <ion-select-option value="interlaken">Interlaken</ion-select-option>
+                </ion-select>-->
+                <br><br>
+                <b>
+                  Swipe jeweils nach Links um den nächsten Beruf zu sehen...
+                </b>
+
+              </ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngFor="let job of jobs">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card class="ion-text-start" style="max-width: 500px;">
+            <img [src]="job.imageURL" style="width: 100%;" >
+            <ion-card-header>
+              <ion-card-title>{{ job.title }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{ (job.description.length>6)? (job.description | slice:0:300)+'...':(job.description)}}
+            </ion-card-content>
+
+            <div style="text-align: center;">
+              <ion-button (click)="openModal(job.linking)" color="primary" shape="round">Mehr erfahren</ion-button>
+            </div>
+            <br>
+          </ion-card>
+        </div>
+      </div>
+
+    </ion-slide>
+
+    <ion-slide>
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card style="text-align: center;">
+            <ion-card-header>
+              <ion-card-title>Das war's für {{this.locationJobSet['location']}}!</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Alle weiteren Ausbildungsberufe wie auch Informationen über die einzelnen Ausbildungsstandorte findest Du
+              auf unserer Webseite.
+            </ion-card-content>
+
+            <div style="text-align: center;">
+              <ion-button (click)="openHomePage();" color="primary" shape="round">Alle Ausbildungsberufe und Standorte
+              </ion-button>
+            </div>
+            <br>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>

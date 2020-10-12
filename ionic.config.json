@@ -1,0 +1,7 @@
+{
+  "name": "schnuppere",
+  "type": "angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

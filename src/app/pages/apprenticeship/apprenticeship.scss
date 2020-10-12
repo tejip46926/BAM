@@ -1,0 +1,10 @@
+ion-content {
+  --background: url(./../../../assets/images/branding/backgrounds/schweizerisch_darken.jpg)
+    no-repeat cover fixed center;
+
+  background: url(./../../../assets/images/branding/backgrounds/schweizerisch_darken.jpg)
+    no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}

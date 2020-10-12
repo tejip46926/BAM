@@ -1,0 +1,96 @@
+<ion-content>
+  <div class="center-header">
+    <div class="center-image {{ jobDetail.linking }}" style="opacity: 1;"></div>
+  </div>
+
+  <div class="about-info">
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Ausbildungsprofil</ion-card-subtitle>
+        <ion-card-title>{{ jobDetail.title }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        {{ jobDetail.description }}
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>DEIN PROFIL</ion-card-subtitle>
+        <ion-card-title>Dein Rucksack für die Lehre</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list *ngFor="let item of jobDetail.profile">
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="./../../../assets/images/icons/SVG_RGB/RUAG_Icon_RGB_Bewertung_Gut.svg">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{ item.title }}</h2>
+              <p>{{ item.subtitle }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>DEINE AUFGABEN</ion-card-subtitle>
+        <ion-card-title>Das kannst Du in der Lehre tun</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list *ngFor="let item of jobDetail.tasks">
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="./../../../assets/images/icons/SVG_RGB/RUAG_Icon_RGB_Bewertung_Gut.svg">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{ item.title }}</h2>
+              <p>{{ item.subtitle }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>DAS BIETEN WIR DIR</ion-card-subtitle>
+        <ion-card-title>Durch die Lehre und noch viel weiter</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list *ngFor="let item of jobDetail.whatYouGet">
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="./../../../assets/images/icons/SVG_RGB/RUAG_Icon_RGB_Bewertung_Gut.svg">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{ item.title }}</h2>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <div style="text-align: center;">
+
+      <br>
+      <img src="./../../../assets/images/branding/logo/logo.png" width="150px">
+      <br><br>
+     <!-- <sup>{{ jobDetail.providedBy }}</sup><br> -->
+      <sup>&copy; {{ jobDetail.lastChange }} RUAG AG</sup>
+    </div>
+  </div>
+
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" style="z-index: 999">
+    <ion-fab-button (click)="dismiss()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
