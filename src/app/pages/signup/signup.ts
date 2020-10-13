@@ -39,6 +39,16 @@ export class SignupPage {
     q6: "",
     q7: "",
     q8: "",
+    q9: "",
+    q10: "",
+    q11: "",
+    q12: "",
+    q13: "",
+    q14: "",
+    q15: "",
+    q16: "",
+    q17: "",
+    q18: "",
   };
 
   constructor(
@@ -229,17 +239,106 @@ export class SignupPage {
         break;
 
       case 8:
-      this.showProceedBtn = true;
-       /* if (
-
+        if (
+          this.anwsers.q9 == "1"
         ) {
           this.showProceedBtn = true;
         } else {
           this.showProceedBtn = false;
-        }*/
+        }
         break;
 
       case 9:
+        if (
+          this.anwsers.q10 == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+
+      case 10:
+        if (
+          this.anwsers.q11 == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+
+      case 11:
+        if (
+          this.anwsers.q12 == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+
+      case 12:
+        if (
+          this.anwsers.q13 == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+
+      case 13:
+        if (
+          this.anwsers.q14 == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+      
+      case 14:
+        if (
+          this.anwsers.q15 == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+
+      case 15:
+        if (
+          this.anwsers.q16 == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+
+      case 16:
+        if (
+          this.anwsers.q17 == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+
+      case 17:
+        if (
+          this.anwsers.q == "1"
+        ) {
+          this.showProceedBtn = true;
+        } else {
+          this.showProceedBtn = false;
+        }
+        break;
+
+      case 18:
         if (
           this.anwsers.mySkills !== "" &&
           this.anwsers.mySkills.length > 15
@@ -250,7 +349,7 @@ export class SignupPage {
         }
         break;
 
-      case 10:
+      case 19:
         if (
           this.humanVerification == this.number1 + this.number2 &&
           this.legalAccepted

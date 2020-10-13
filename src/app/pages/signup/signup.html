@@ -204,25 +204,25 @@
               <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <ion-radio-group (ionSelect)="inputChanged($event)">
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
                 <ion-item>
                   <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="1"></ion-radio>
+                  <ion-radio slot="start" value="t" ></ion-radio>
                 </ion-item>
 
-                <ion-item>
+                <ion-item >
                   <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="2"></ion-radio>
+                  <ion-radio slot="start" value="f0"></ion-radio>
                 </ion-item>
 
                 <ion-item>
                   <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="3"></ion-radio>
+                  <ion-radio slot="start" value="f1"></ion-radio>
                 </ion-item>
 
                 <ion-item>
                   <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="4"></ion-radio>
+                  <ion-radio slot="start" value="f2"></ion-radio>
                 </ion-item>
               </ion-radio-group>
             </ion-card-content>
@@ -231,42 +231,324 @@
       </div>
     </ion-slide>
 
-
     <ion-slide *ngIf="newUser">
       <div class="container">
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title *ngIf="visitorData.gender == 'Frau'">Wieso möchtest Du Informatikerin werden?
-              </ion-card-title>
-              <ion-card-title *ngIf="visitorData.gender !== 'Frau'">Wieso möchtest Du Informatiker werden?
-              </ion-card-title>
-              <ion-card-subtitle mode="md">Schildere dies bitte in einem oder zwei kurzen Sätzen. Mindestens 15 Zeichen sind vorausgesetzt!</ion-card-subtitle>
+              <ion-card-title>Frage 10 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <ion-textarea (ionChange)="inputChanged($event.target.value)" [(ngModel)]="visitorData.whyThisJob"
-                placeholder="Tippe um einzugeben..."></ion-textarea>
+              <ion-radio-group [(ngModel)]="anwsers.q10" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
             </ion-card-content>
           </ion-card>
         </div>
       </div>
     </ion-slide>
 
-
-    <ion-slide *ngIf="newUser">
+        <ion-slide *ngIf="newUser">
       <div class="container">
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Hattest Du bereits Kontakt mit Informatik?</ion-card-title>
-              <ion-card-subtitle mode="md">Schildere bitte in einem oder zwei kurzen Sätzen was du bereits kennst,
-                gemacht hast
-                oder gesehen hast. Mindestens 15 Zeichen sind vorausgesetzt!</ion-card-subtitle>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
             </ion-card-header>
-
             <ion-card-content>
-              <ion-textarea (ionChange)="inputChanged($event.target.value)" [(ngModel)]="visitorData.mySkills"
-                placeholder="Tippe um einzugeben..."></ion-textarea>
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
             </ion-card-content>
           </ion-card>
         </div>
