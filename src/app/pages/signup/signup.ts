@@ -215,7 +215,7 @@ export class SignupPage {
 
       case 7:
         if (
-          this.anwsers.q8 == "SSD" || this.anwsers.q8 == "Ssd" || this.anwsers.q == "ssd"
+          this.anwsers.q8 == "SSD" || this.anwsers.q8 == "Ssd" || this.anwsers.q8 == "ssd"
         ) {
           this.showProceedBtn = true;
           this.addressSearch= document.querySelector('[name="q8"]');
@@ -229,14 +229,14 @@ export class SignupPage {
         break;
 
       case 8:
-        if (
-          this.anwsers.whyThisJob !== "" &&
-          this.anwsers.whyThisJob.length > 15
+      this.showProceedBtn = true;
+       /* if (
+
         ) {
           this.showProceedBtn = true;
         } else {
           this.showProceedBtn = false;
-        }
+        }*/
         break;
 
       case 9:

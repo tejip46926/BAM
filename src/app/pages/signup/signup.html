@@ -27,9 +27,9 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Bereit für das Quizz</ion-card-title><br>
+              <ion-card-title>Bereit für das Quiz</ion-card-title><br>
               <ion-card-subtitle mode="md">
-                Du kannst zum lösen des Quizz die Unterlagen verwenden, welche du erhalten hast. Sobald zu das Quizz abgeschlossen hast, kannst Du dich bei einem Betreuer melden um einen praktischen Einblick in unsere Arbeit zu erhalten.
+                Du kannst zum lösen des Quiz die Unterlagen verwenden, welche du erhalten hast. Sobald zu das Quiz abgeschlossen hast, kannst Du dich bei einem Betreuer melden um einen praktischen Einblick in unsere Arbeit zu erhalten.
               </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
@@ -40,6 +40,7 @@
         </div>
       </div>
     </ion-slide>
+
     <ion-slide *ngIf="newUser">
       <div class="container">
         <div class="vertical-center">
@@ -64,7 +65,7 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-title>Frage 2 / 18</ion-card-title><br>
               <ion-card-subtitle mode="md">
                 Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
@@ -83,7 +84,7 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-title>Frage 3 / 18</ion-card-title><br>
               <ion-card-subtitle mode="md">
                 Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
@@ -102,7 +103,7 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-title>Frage 4 / 18</ion-card-title><br>
               <ion-card-subtitle mode="md">
                 Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
@@ -121,7 +122,7 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-title>Frage 5 / 18</ion-card-title><br>
               <ion-card-subtitle mode="md">
                 Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
@@ -140,7 +141,7 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-title>Frage 6 / 18</ion-card-title><br>
               <ion-card-subtitle mode="md">
                 Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
@@ -159,7 +160,7 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-title>Frage 7 / 18</ion-card-title><br>
               <ion-card-subtitle mode="md">
                 Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
@@ -172,13 +173,14 @@
         </div>
       </div>
     </ion-slide>
+   
 
     <ion-slide *ngIf="newUser">
       <div class="container">
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-title>Frage 8 / 18</ion-card-title><br>
               <ion-card-subtitle mode="md">
                 Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
@@ -198,26 +200,32 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title *ngIf="visitorData.gender == 'Frau'">Wie hast Du erfahren, dass RUAG auch
-                Informatikerinnen ausbildet?</ion-card-title>
-              <ion-card-title *ngIf="visitorData.gender !== 'Frau'">Wie hast Du erfahren, dass RUAG auch Informatiker
-                ausbildet?</ion-card-title>
-              <ion-card-subtitle mode="md">Bitte wähle eine Option aus.</ion-card-subtitle>
+              <ion-card-title>Frage 9 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
             </ion-card-header>
-
             <ion-card-content>
-              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.heardAboutThis"
-                value="null" okText="OK" cancelText="Abbruch">
-                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
-                <ion-select-option value="inserat">Inserat</ion-select-option>
-                <ion-select-option value="einladung">Persönliche Einladung</ion-select-option>
-                <ion-select-option value="internetwerbung">Internetwerbung</ion-select-option>
-                <ion-select-option value="empfehlung">Empfehlung</ion-select-option>
-                <ion-select-option value="talentsday">Talentsday</ion-select-option>
-                <ion-select-option value="website">RUAG Website</ion-select-option>
-              </ion-select>
-            </ion-card-content>
+              <ion-radio-group (ionSelect)="inputChanged($event)">
+                <ion-item>
+                  <ion-label>8 Bit</ion-label>
+                  <ion-radio slot="start" value="1"></ion-radio>
+                </ion-item>
 
+                <ion-item>
+                  <ion-label>3 Bit</ion-label>
+                  <ion-radio slot="start" value="2"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>5 Bit</ion-label>
+                  <ion-radio slot="start" value="3"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12 Bit</ion-label>
+                  <ion-radio slot="start" value="4"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
           </ion-card>
         </div>
       </div>
