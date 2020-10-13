@@ -51,7 +51,8 @@
               </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <img src="./../../../assets/images/hardware/ssd.jpg" width="150px">
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/cpu.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q1" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q1"></ion-input>
             </ion-card-content>
           </ion-card>
         </div>
@@ -62,22 +63,14 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Wer bist denn Du?</ion-card-title>
-              <ion-card-subtitle mode="md">Gib bitte deinen Vornamen, Nachnamen ein und wähle dein Geschlecht aus.
+              <ion-card-title>Frage 1 / 1</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <ion-input [(ngModel)]="visitorData.firstName" type="text" (ionChange)='inputChanged($event.target.value)'
-                placeholder="Vorname"></ion-input>
-              <ion-input [(ngModel)]="visitorData.lastName" type="text" (ionChange)='inputChanged($event.target.value)'
-                placeholder="Nachname"></ion-input>
-              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.gender" value="Frau"
-                okText="OK" cancelText="Abbruch">
-                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
-                <ion-select-option value="Frau">Weiblich</ion-select-option>
-                <ion-select-option value="Herr">Männlich</ion-select-option>
-                <ion-select-option value="Anderes">Divers</ion-select-option>
-              </ion-select>
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/cpu.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q1" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q1"></ion-input>
             </ion-card-content>
           </ion-card>
         </div>

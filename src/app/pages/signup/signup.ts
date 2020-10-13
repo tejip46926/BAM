@@ -26,25 +26,19 @@ export class SignupPage {
   operationSign;
   legalAccepted;
   selectedJob = "null";
+  addressSearch: HTMLElement;
 
   @ViewChild("slides", { static: true }) slides: IonSlides;
 
-  visitorData = {
-    gender: "null",
-    firstName: "",
-    lastName: "",
-    street: "",
-    zip: "",
-    city: "",
-    email: "",
-    phone: "",
-    birthday: "2009-01-01",
-    class: "null",
-    apprenticeStart: "null",
-    selectedCourse: "null",
-    heardAboutThis: "null",
-    whyThisJob: "",
-    mySkills: "",
+  anwsers = {
+    q1: "",
+    q2: "",
+    q3: "",
+    q4: "",
+    q5: "",
+    q6: "",
+    q7: "",
+    q8: "",
   };
 
   constructor(
@@ -116,90 +110,128 @@ export class SignupPage {
     switch (this.viewIndex) {
       case 0:
         if (
-          this.visitorData.firstName !== "" &&
-          this.visitorData.firstName.length >= 3 &&
-          this.visitorData.lastName !== "" &&
-          this.visitorData.lastName.length >= 3 &&
-          this.visitorData.gender !== "null"
+          this.anwsers.q1 == "Cpu" || this.anwsers.q1 == "cpu" || this.anwsers.q1 == "CPU" || this.anwsers.q1 == "Prozessor"
         ) {
           this.showProceedBtn = true;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid red"
+          this.addressSearch.style.borderRadius = "25px"
         }
         break;
 
       case 1:
         if (
-          this.visitorData.street !== "" &&
-          this.visitorData.firstName.length >= 2 &&
-          this.visitorData.zip !== "" &&
-          this.visitorData.zip.length == 4 &&
-          this.visitorData.city !== "" &&
-          this.visitorData.city.length >= 2
+          this.anwsers.q2 == "Cpu"
         ) {
           this.showProceedBtn = true;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid red"
+          this.addressSearch.style.borderRadius = "25px"
         }
         break;
 
       case 2:
         if (
-          this.visitorData.email !== "" &&
-          this.visitorData.email.length >= 5 &&
-          this.visitorData.phone !== "" &&
-          this.visitorData.phone.length >= 9
+          this.anwsers.q3 == "Cpu"
         ) {
           this.showProceedBtn = true;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid red"
+          this.addressSearch.style.borderRadius = "25px"
         }
         break;
 
       case 3:
-        if (this.visitorData.birthday !== "") {
+        if (
+          this.anwsers.q4 == "Cpu"
+        ) {
           this.showProceedBtn = true;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid red"
+          this.addressSearch.style.borderRadius = "25px"
         }
         break;
 
       case 4:
-        if (this.visitorData.class !== "") {
+        if (
+          this.anwsers.q5 == "Cpu"
+        ) {
           this.showProceedBtn = true;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid red"
+          this.addressSearch.style.borderRadius = "25px"
         }
         break;
 
       case 5:
-        if (this.visitorData.apprenticeStart !== "null") {
+        if (
+          this.anwsers.q6 == "Cpu"
+        ) {
           this.showProceedBtn = true;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid red"
+          this.addressSearch.style.borderRadius = "25px"
         }
         break;
 
       case 6:
-        if (this.visitorData.selectedCourse !== "null") {
+        if (
+          this.anwsers.q7 == "Cpu"
+        ) {
           this.showProceedBtn = true;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid red"
+          this.addressSearch.style.borderRadius = "25px"
         }
         break;
 
       case 7:
-        if (this.visitorData.heardAboutThis !== "null") {
+        if (
+          this.anwsers.q8 == "Cpu"
+        ) {
           this.showProceedBtn = true;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
+          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch.style.border = "1px solid red"
+          this.addressSearch.style.borderRadius = "25px"
         }
         break;
 
       case 8:
         if (
-          this.visitorData.whyThisJob !== "" &&
-          this.visitorData.whyThisJob.length > 15
+          this.anwsers.whyThisJob !== "" &&
+          this.anwsers.whyThisJob.length > 15
         ) {
           this.showProceedBtn = true;
         } else {
@@ -209,8 +241,8 @@ export class SignupPage {
 
       case 9:
         if (
-          this.visitorData.mySkills !== "" &&
-          this.visitorData.mySkills.length > 15
+          this.anwsers.mySkills !== "" &&
+          this.anwsers.mySkills.length > 15
         ) {
           this.showProceedBtn = true;
         } else {
@@ -259,21 +291,21 @@ export class SignupPage {
     var returnValue = false;
     this.http
       .post("https://app.berufsbildung.ga/api/insert.php", {
-        vorname: this.visitorData.firstName,
-        nachname: this.visitorData.lastName,
-        geschlecht: this.visitorData.gender,
-        strasse: this.visitorData.street,
-        plz: this.visitorData.zip,
-        ort: this.visitorData.city,
-        email: this.visitorData.email,
-        natel: this.visitorData.phone,
-        geburtsdatum: this.visitorData.birthday,
-        schuljahr: this.visitorData.class,
-        lehrstart: this.visitorData.apprenticeStart,
-        schnupperdatum: this.visitorData.selectedCourse,
-        aufmerksam_geworden: this.visitorData.heardAboutThis,
-        wieso_dieser_beruf: this.visitorData.whyThisJob,
-        das_kenne_ich_bereits: this.visitorData.mySkills,
+        vorname: this.anwsers.firstName,
+        nachname: this.anwsers.lastName,
+        geschlecht: this.anwsers.gender,
+        strasse: this.anwsers.street,
+        plz: this.anwsers.zip,
+        ort: this.anwsers.city,
+        email: this.anwsers.email,
+        natel: this.anwsers.phone,
+        geburtsdatum: this.anwsers.birthday,
+        schuljahr: this.anwsers.class,
+        lehrstart: this.anwsers.apprenticeStart,
+        schnupperdatum: this.anwsers.selectedCourse,
+        aufmerksam_geworden: this.anwsers.heardAboutThis,
+        wieso_dieser_beruf: this.anwsers.whyThisJob,
+        das_kenne_ich_bereits: this.anwsers.mySkills,
         verified_legal_acceptance: "OK",
       })
       .subscribe(
