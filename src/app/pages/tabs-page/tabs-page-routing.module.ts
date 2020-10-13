@@ -27,15 +27,7 @@ const routes: Routes = [
           }
         ]
       },
-      {
-        path: 'apprenticeship',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../apprenticeship/apprenticeship.module').then(m => m.ApprenticeshipModule)
-          }
-        ]
-      },
+
       {
         path: 'about',
         children: [

@@ -1,27 +1,5 @@
 <ion-content>
   <ion-slides #slides pager="true" style="height:100%" class=“swiper-no-swiping”>
-    <ion-slide *ngIf="!newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card style="text-align: center;">
-            <ion-card-header>
-              <ion-card-title>Danke für die Anmeldung!</ion-card-title><br>
-              <ion-card-subtitle mode="md">
-                Du hast Dich bereits für den Schnuppertag angemeldet und wir haben die Informationen erhalten.
-                Wir werden in den nächsten Wochen den Kontakt mit Dir suchen.<br><br>
-                Beste Grüsse,<br>
-                <div style="text-align: center;"> 
-
-                  <br>
-                  <img src="./../../../assets/images/branding/logo/logo.png" width="150px">
-                  <br><br>
-                </div>
-              </ion-card-subtitle>
-            </ion-card-header>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
     <ion-slide *ngIf="newUser">
       <div class="container">
         <div class="vertical-center">
@@ -237,315 +215,27 @@
           <ion-card>
             <ion-card-header>
               <ion-card-title>Frage 10 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
+              <ion-card-subtitle mode="md">Ein Megabyte hat ...</ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
               <ion-radio-group [(ngModel)]="anwsers.q10" type="text" (ionChange)='inputChanged($event.target.value)'>
                 <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
+                  <ion-label>1024 Gigabyte</ion-label>
+                  <ion-radio slot="start" value="f0" ></ion-radio>
                 </ion-item>
 
                 <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
+                  <ion-label>1024 Kilobyte</ion-label>
+                  <ion-radio slot="start" value="t"></ion-radio>
                 </ion-item>
 
                 <ion-item>
-                  <ion-label>5 Bit</ion-label>
+                  <ion-label>1000 Byte</ion-label>
                   <ion-radio slot="start" value="f1"></ion-radio>
                 </ion-item>
 
                 <ion-item>
-                  <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="f2"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-        <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 9 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
-                <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
-                </ion-item>
-
-                <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="f1"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="f2"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-        <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 9 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
-                <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
-                </ion-item>
-
-                <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="f1"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="f2"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-        <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 9 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
-                <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
-                </ion-item>
-
-                <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="f1"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="f2"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-        <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 9 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
-                <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
-                </ion-item>
-
-                <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="f1"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="f2"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-        <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 9 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
-                <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
-                </ion-item>
-
-                <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="f1"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="f2"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-        <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 9 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
-                <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
-                </ion-item>
-
-                <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="f1"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="f2"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-        <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 9 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
-                <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
-                </ion-item>
-
-                <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="f1"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>12 Bit</ion-label>
-                  <ion-radio slot="start" value="f2"></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-        <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 9 / 18</ion-card-title><br>
-              <ion-card-subtitle mode="md">Aus wie vielen Bit besteht ein Byte?</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-radio-group [(ngModel)]="anwsers.q9" type="text" (ionChange)='inputChanged($event.target.value)'>
-                <ion-item>
-                  <ion-label>8 Bit</ion-label>
-                  <ion-radio slot="start" value="t" ></ion-radio>
-                </ion-item>
-
-                <ion-item >
-                  <ion-label>3 Bit</ion-label>
-                  <ion-radio slot="start" value="f0"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>5 Bit</ion-label>
-                  <ion-radio slot="start" value="f1"></ion-radio>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label>12 Bit</ion-label>
+                  <ion-label>500 Byte</ion-label>
                   <ion-radio slot="start" value="f2"></ion-radio>
                 </ion-item>
               </ion-radio-group>
@@ -560,59 +250,299 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Ein letzter Schritt!
-              </ion-card-title>
-              <ion-card-subtitle mode="md">Bitte bestätige, dass Du ein Mensch bist, indem Du eine kleine Rechenaufgabe
-                löst.</ion-card-subtitle>
+              <ion-card-title>Frage 11 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Wozu benötigt man Treiberprogramme?</ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              Was ergibt {{ number1 }} + {{ number2 }}?
-              <ion-input [(ngModel)]="humanVerification" type="tel" (ionChange)='inputChanged($event.target.value)'
-                placeholder="Deine Lösung"></ion-input>
-
-              <ion-list lines="none" class="centerControlls">
-
-                <ion-item class="custom-checkbox">
-                  <ion-label class="ion-text-wrap" style="font-size: 14px;">Ich bin damit einverstanden, dass RUAG meine
-                    Informationen speichert und diese für Zwecke der Berufsbildung weiterverwendet.
-                  </ion-label>
-                  <ion-checkbox [(ngModel)]="legalAccepted" (ionChange)='inputChanged($event.target.value)' mode="ios"
-                    color="primary" checked slot="start">
-                  </ion-checkbox>
+              <ion-radio-group [(ngModel)]="anwsers.q11" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>Um den Computer zu beschleunigent</ion-label>
+                  <ion-radio slot="start" value="f0" ></ion-radio>
                 </ion-item>
-              </ion-list>
+
+                <ion-item >
+                  <ion-label>Zum Ansteuern von Systemkomponenten (Karten, Drucker , ...)</ion-label>
+                  <ion-radio slot="start" value="t"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Zum Versenden von E-Mails</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Zum Vertreiben von Viren</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
             </ion-card-content>
           </ion-card>
         </div>
       </div>
     </ion-slide>
 
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 12 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Was ist keine Programmiersprache?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q12" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>C#</ion-label>
+                  <ion-radio slot="start" value="f2" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>C++</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Python</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>OS/2</ion-label>
+                  <ion-radio slot="start" value="t"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 13 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Wofür steht die Abkürzung WLAN?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q13" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>Wireless Low Administration Net</ion-label>
+                  <ion-radio slot="start" value="f2" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>Wire- and Lineless Access Network</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Weird Location Allow Network</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Wireless Local-Area Network</ion-label>
+                  <ion-radio slot="start" value="t"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 14 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Wie heisst das Internet-Protokoll zur Übertragung von Dateien?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q14" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>HTTP</ion-label>
+                  <ion-radio slot="start" value="f0" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>FTP</ion-label>
+                  <ion-radio slot="start" value="t"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>HTTPS</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>URL</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 15 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Welche dieser IP-Adressen ist valide?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q15" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>145.21.1</ion-label>
+                  <ion-radio slot="start" value="f1" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>10.2345.1.12</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>12.157.91.31</ion-label>
+                  <ion-radio slot="start" value="t"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>17158.1.1</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 16 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Welches ist kein Betriebssystem?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q16" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>Windows</ion-label>
+                  <ion-radio slot="start" value="f1" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>MS-WORD</ion-label>
+                  <ion-radio slot="start" value="t"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>MS-DOS</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Linux</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 17 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Was ist 169.264.121.23 für eine IP Adresse?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q17" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>Diese Adresse ist eine APIPA Adresse</ion-label>
+                  <ion-radio slot="start" value="f2" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>Diese Adresse ist die Localhost Adresse</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Diese Adresse ist der Standardgateway von Google</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Diese Adresse ist ungültig</ion-label>
+                  <ion-radio slot="start" value="t"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+        <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 18 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">Was bedeutet der Begriff Open Source?</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-radio-group [(ngModel)]="anwsers.q18" type="text" (ionChange)='inputChanged($event.target.value)'>
+                <ion-item>
+                  <ion-label>Die Software ist gratis und der Quellcode frei veränderbar</ion-label>
+                  <ion-radio slot="start" value="t" ></ion-radio>
+                </ion-item>
+
+                <ion-item >
+                  <ion-label>Die Sofware ist kostenpflichtig und man hat keine Einsicht in den Quellcode</ion-label>
+                  <ion-radio slot="start" value="f0"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Die Software darf ohne zu bezahlen gebraucht, aber nicht verändert werden</ion-label>
+                  <ion-radio slot="start" value="f1"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>Eine geöffnete Flasche Quellwasser</ion-label>
+                  <ion-radio slot="start" value="f2"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
     <ion-slide *ngIf="newUser">
       <div class="container">
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Danke, {{ visitorData.firstName }}!</ion-card-title>
+              <ion-card-title>Glückwunsch!</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Du hast das Quiz erflogreich abgeschlossen. Wenn Du nun einen tieferen, pratischen Einblick in usere Arbeit erhalten möchtest, melde dich bei einem Betreuer und zeige ihm diese Seite, damit er siehst, dass Du das Quiz abgeschlossen hast. Er wird dir weitere Anweisungen geben.
+              </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <div *ngIf="loading">
-                Deine Informationen werden gerade noch auf unsere PC's kopiert. Bitte schliesse diese Ansicht erst,
-                wenn
-                Du eine Erfolgsmeldung siehst.<br><br>
-                <ion-spinner color="primary" name="lines-small"></ion-spinner>
-              </div>
-              <div *ngIf="success">
-                Super! Deine Informationen wurden abgelegt.
-                Du hast nun eine Bestätigungsmail erhalten. Antworte bitte auf diese und sende deinen Lebenslauf wie
-                auch die letzten Schulzeugnisse und dem Motivationsschreiben als Anhang mit.<br><br>
-                <img src="./../../../assets/images/checkmark.gif" width="90px">
-              </div>
-
-              <div *ngIf="error">
-                Hoppla! Beim abspeichern deiner Informationen ist ein Fehler aufgetreten. Wende Dich bitte an die
-                Informatiker weitere Hilfe!<br><br>
-                <img src="./../../../assets/images/error.gif" width="120px">
-              </div>
             </ion-card-content>
           </ion-card>
         </div>

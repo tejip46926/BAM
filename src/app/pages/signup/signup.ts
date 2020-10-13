@@ -240,7 +240,7 @@ export class SignupPage {
 
       case 8:
         if (
-          this.anwsers.q9 == "1"
+          this.anwsers.q9 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -250,7 +250,7 @@ export class SignupPage {
 
       case 9:
         if (
-          this.anwsers.q10 == "1"
+          this.anwsers.q10 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -260,7 +260,7 @@ export class SignupPage {
 
       case 10:
         if (
-          this.anwsers.q11 == "1"
+          this.anwsers.q11 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -270,7 +270,7 @@ export class SignupPage {
 
       case 11:
         if (
-          this.anwsers.q12 == "1"
+          this.anwsers.q12 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -280,7 +280,7 @@ export class SignupPage {
 
       case 12:
         if (
-          this.anwsers.q13 == "1"
+          this.anwsers.q13 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -290,7 +290,7 @@ export class SignupPage {
 
       case 13:
         if (
-          this.anwsers.q14 == "1"
+          this.anwsers.q14 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -300,7 +300,7 @@ export class SignupPage {
       
       case 14:
         if (
-          this.anwsers.q15 == "1"
+          this.anwsers.q15 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -310,7 +310,7 @@ export class SignupPage {
 
       case 15:
         if (
-          this.anwsers.q16 == "1"
+          this.anwsers.q16 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -320,7 +320,7 @@ export class SignupPage {
 
       case 16:
         if (
-          this.anwsers.q17 == "1"
+          this.anwsers.q17 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
@@ -330,18 +330,7 @@ export class SignupPage {
 
       case 17:
         if (
-          this.anwsers.q == "1"
-        ) {
-          this.showProceedBtn = true;
-        } else {
-          this.showProceedBtn = false;
-        }
-        break;
-
-      case 18:
-        if (
-          this.anwsers.mySkills !== "" &&
-          this.anwsers.mySkills.length > 15
+          this.anwsers.q18 == "t"
         ) {
           this.showProceedBtn = true;
         } else {
