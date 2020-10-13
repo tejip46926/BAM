@@ -125,14 +125,14 @@ export class SignupPage {
 
       case 1:
         if (
-          this.anwsers.q2 == "Cpu"
+          this.anwsers.q2 == "Festplatte" || this.anwsers.q2 == "Hdd" || this.anwsers.q2 == "HDD" || this.anwsers.q2 == "Harddisk" || this.anwsers.q2 == "hdd"
         ) {
           this.showProceedBtn = true;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q2"]');
           this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q2"]');
           this.addressSearch.style.border = "1px solid red"
           this.addressSearch.style.borderRadius = "25px"
         }
@@ -140,14 +140,14 @@ export class SignupPage {
 
       case 2:
         if (
-          this.anwsers.q3 == "Cpu"
+          this.anwsers.q3 == "Grafikkarte" || this.anwsers.q3 == "gpu" || this.anwsers.q3 == "GPU" || this.anwsers.q3 == "Gpu"
         ) {
           this.showProceedBtn = true;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q3"]');
           this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q3"]');
           this.addressSearch.style.border = "1px solid red"
           this.addressSearch.style.borderRadius = "25px"
         }
@@ -155,14 +155,14 @@ export class SignupPage {
 
       case 3:
         if (
-          this.anwsers.q4 == "Cpu"
+          this.anwsers.q4 == "Mainboard" || this.anwsers.q4 == "Motherboard" || this.anwsers.q4 == "Hauptplatine"
         ) {
           this.showProceedBtn = true;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q4"]');
           this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q4"]');
           this.addressSearch.style.border = "1px solid red"
           this.addressSearch.style.borderRadius = "25px"
         }
@@ -170,14 +170,14 @@ export class SignupPage {
 
       case 4:
         if (
-          this.anwsers.q5 == "Cpu"
+          this.anwsers.q5 == "Netzkarte"
         ) {
           this.showProceedBtn = true;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q5"]');
           this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q5"]');
           this.addressSearch.style.border = "1px solid red"
           this.addressSearch.style.borderRadius = "25px"
         }
@@ -185,14 +185,14 @@ export class SignupPage {
 
       case 5:
         if (
-          this.anwsers.q6 == "Cpu"
+          this.anwsers.q6 == "Netzteil"
         ) {
           this.showProceedBtn = true;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q6"]');
           this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q6"]');
           this.addressSearch.style.border = "1px solid red"
           this.addressSearch.style.borderRadius = "25px"
         }
@@ -200,14 +200,14 @@ export class SignupPage {
 
       case 6:
         if (
-          this.anwsers.q7 == "Cpu"
+          this.anwsers.q7 == "RAM" || this.anwsers.q7 == "ram" || this.anwsers.q7 == "Ram" || this.anwsers.q7 == "Arbeitsspeicher"
         ) {
           this.showProceedBtn = true;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q7"]');
           this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q7"]');
           this.addressSearch.style.border = "1px solid red"
           this.addressSearch.style.borderRadius = "25px"
         }
@@ -215,14 +215,14 @@ export class SignupPage {
 
       case 7:
         if (
-          this.anwsers.q8 == "Cpu"
+          this.anwsers.q8 == "SSD" || this.anwsers.q8 == "Ssd" || this.anwsers.q == "ssd"
         ) {
           this.showProceedBtn = true;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q8"]');
           this.addressSearch.style.border = "1px solid lime"
         } else {
           this.showProceedBtn = false;
-          this.addressSearch= document.querySelector('[name="q1"]');
+          this.addressSearch= document.querySelector('[name="q8"]');
           this.addressSearch.style.border = "1px solid red"
           this.addressSearch.style.borderRadius = "25px"
         }

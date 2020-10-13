@@ -45,25 +45,7 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Frage 1 / 20</ion-card-title><br>
-              <ion-card-subtitle mode="md">
-                Wie heisst die auf dem Bild zu sehende Komponente?
-              </ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/cpu.jpg" width="75px">
-              <ion-input [(ngModel)]="anwsers.q1" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q1"></ion-input>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-    <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Frage 1 / 1</ion-card-title><br>
+              <ion-card-title>Frage 1 / 18</ion-card-title><br>
               <ion-card-subtitle mode="md">
                 Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
@@ -82,36 +64,14 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Hi {{ visitorData.firstName }}! Woher kommst Du?</ion-card-title>
-              <ion-card-subtitle mode="md">Gib bitte deine Adresse mit PLZ und Ort ein.</ion-card-subtitle>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-input [(ngModel)]="visitorData.street" type="text" (ionChange)='inputChanged($event.target.value)'
-                placeholder="Strasse und Hausnummer"></ion-input>
-              <ion-input [(ngModel)]="visitorData.zip" type="tel" (ionChange)='inputChanged($event.target.value)'
-                placeholder="Postleitzahl"></ion-input>
-              <ion-input [(ngModel)]="visitorData.city" type="text" (ionChange)='inputChanged($event.target.value)'
-                placeholder="Wohnort"></ion-input>
-            </ion-card-content>
-          </ion-card>
-        </div>
-      </div>
-    </ion-slide>
-
-    <ion-slide *ngIf="newUser">
-      <div class="container">
-        <div class="vertical-center">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Und wie könnten wir Dich digtial erreichen?</ion-card-title>
-              <ion-card-subtitle mode="md">Gib bitte deine E-Mail-Adresse sowie deine Telefonnummer ein.
+              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
               </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <ion-input [(ngModel)]="visitorData.email" type="email" (ionChange)='inputChanged($event.target.value)'
-                placeholder="E-Mail-Adresse"></ion-input>
-              <ion-input [(ngModel)]="visitorData.phone" type="tel" (ionChange)='inputChanged($event.target.value)'
-                placeholder="Telefonnummer (Format: 0771234567)"></ion-input>
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/festplatte.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q2" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q2"></ion-input>
             </ion-card-content>
           </ion-card>
         </div>
@@ -123,15 +83,14 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Und wann hast Du Geburtstag {{ visitorData.firstName }}?</ion-card-title>
-              <ion-card-subtitle mode="md">Gib bitte dein korrektes Geburtsdatum an.</ion-card-subtitle>
+              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
+              </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <ion-label position="floating">Dein Geburtsdatum</ion-label>
-              <ion-datetime [(ngModel)]="visitorData.birthday" (ionChange)='inputChanged($event.target.value)'
-                displayFormat="DD.MM.YYYY" max="2010-01-01" min="1960-01-01" value="2001-09-01T10:00:00.000"
-                doneText="Fertig" cancelText="Abbruch">
-              </ion-datetime>
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/grafikkarte.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q3" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q3"></ion-input>
             </ion-card-content>
           </ion-card>
         </div>
@@ -143,18 +102,14 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Und in welchem Schuljahr bist Du denn?</ion-card-title>
-              <ion-card-subtitle mode="md">Gib bitte dein aktuelles Schuljahr an.</ion-card-subtitle>
+              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
+              </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.class" value="null"
-                okText="OK" cancelText="Abbruch">
-                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
-                <ion-select-option value="7">7. Klasse</ion-select-option>
-                <ion-select-option value="8">8. Klasse</ion-select-option>
-                <ion-select-option value="9">9. Klasse</ion-select-option>
-                <ion-select-option value="10+">10. Klasse (oder später)</ion-select-option>
-              </ion-select>
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/motherboard.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q4" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q4"></ion-input>
             </ion-card-content>
           </ion-card>
         </div>
@@ -166,43 +121,71 @@
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>Und wann würdest Du deine Lehre starten?</ion-card-title>
-              <ion-card-subtitle mode="md">Gib das Jahr deines Lehrstarts ein.</ion-card-subtitle>
+              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
+              </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.apprenticeStart"
-                value="null" okText="OK" cancelText="Abbruch">
-                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
-                <ion-select-option value="2022">2022</ion-select-option>
-                <ion-select-option value="2023">2023</ion-select-option>
-                <ion-select-option value="2024">2024</ion-select-option>
-                <ion-select-option value="2025">2025</ion-select-option>
-                <ion-select-option value="2025">2026</ion-select-option>
-
-              </ion-select>
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/netzkarte.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q5" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q5"></ion-input>
             </ion-card-content>
           </ion-card>
         </div>
       </div>
     </ion-slide>
 
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/netzteil.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q6" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q6"></ion-input>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
 
     <ion-slide *ngIf="newUser">
       <div class="container">
         <div class="vertical-center">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>An welchem Datum würdest Du gerne schnuppern kommen?</ion-card-title>
-              <ion-card-subtitle mode="md">Wähle bitte ein passendes Datum aus.</ion-card-subtitle>
+              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
+              </ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
-              <ion-select (ionChange)='inputChanged($event.target.value)' [(ngModel)]="visitorData.selectedCourse"
-                value="null" okText="OK" cancelText="Abbruch">
-                <ion-select-option disabled value="null">Bitte auswählen...</ion-select-option>
-                <ion-select-option value="2020-11-13">Freitag, 13.11.2020</ion-select-option>
-                <ion-select-option value="2020-11-14">Framstag, 14.11.2020</ion-select-option>
-                <ion-select-option value="2020-11-15">Fromstag, 15.11.2020</ion-select-option>
-              </ion-select>
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/ram.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q7" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q7"></ion-input>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngIf="newUser">
+      <div class="container">
+        <div class="vertical-center">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Frage 1 / 18</ion-card-title><br>
+              <ion-card-subtitle mode="md">
+                Wie heisst die auf dem Bild zu sehende Komponente?
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="https://raw.githubusercontent.com/tejip46926/BAM/master/src/assets/images/hardware/ssd.jpg" width="75px">
+              <ion-input [(ngModel)]="anwsers.q8" type="text" (ionChange)='inputChanged($event.target.value)' placeholder="Deine Antwort" name="q8"></ion-input>
             </ion-card-content>
           </ion-card>
         </div>
